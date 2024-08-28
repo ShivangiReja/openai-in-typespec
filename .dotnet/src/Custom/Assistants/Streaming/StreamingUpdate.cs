@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Net.ServerSentEvents;
 using System.Text.Json;
 
@@ -21,6 +22,7 @@ namespace OpenAI.Assistants;
 /// For threads: <see cref="ThreadUpdate"/>
 /// </para>
 /// </remarks>
+[Experimental("OPENAI001")]
 public abstract partial class StreamingUpdate
 {
     /// <summary>
